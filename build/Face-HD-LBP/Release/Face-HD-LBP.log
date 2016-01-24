@@ -1,0 +1,80 @@
+﻿生成启动时间为 2016-01-24 23:18:27。
+     1>项目“C:\face\算法\face-HDlbp\High-Dimensional-LBP\build\Face-HD-LBP\Face-HD-LBP.vcxproj”在节点 2 上(build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output 目录未以斜杠结尾。此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+     1>InitializeBuildStatus:
+         正在创建“Release\Face-HD-LBP.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "..\..\src\extract-lbp.cpp"
+         extract-lbp.cpp
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(74): warning C4251: “INTRAFACE::FaceAlignment::m_DR”: class“std::vector<_Ty>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(74): warning C4251: “INTRAFACE::FaceAlignment::m_Db”: class“std::vector<_Ty>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(74): warning C4251: “INTRAFACE::FaceAlignment::m_TR”: class“std::vector<_Ty>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(74): warning C4251: “INTRAFACE::FaceAlignment::m_Tb”: class“std::vector<_Ty>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=cv::Mat
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(75): warning C4251: “INTRAFACE::FaceAlignment::m_winsize”: class“std::vector<_Ty>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=int
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(76): warning C4251: “INTRAFACE::FaceAlignment::m_flags”: class“std::vector<_Ty,_Ax>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Ty=bool,
+                     _Ax=std::allocator<bool>
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(77): warning C4251: “INTRAFACE::FaceAlignment::m_w”: class“cv::Mat”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\opencv2/core/mat.hpp(645) : 参见“cv::Mat”的声明
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(78): warning C4251: “INTRAFACE::FaceAlignment::m_meanShape2D”: class“cv::Mat”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\opencv2/core/mat.hpp(645) : 参见“cv::Mat”的声明
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(80): warning C4251: “INTRAFACE::FaceAlignment::m_cropROI”: class“cv::Rect_<_Tp>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Tp=int
+                 ]
+     1>C:\face\算法\face-HDlbp\High-Dimensional-LBP\include\intraface/FaceAlignment.h(81): warning C4251: “INTRAFACE::FaceAlignment::m_offset”: class“cv::Rect_<_Tp>”需要有 dll 接口由 class“INTRAFACE::FaceAlignment”的客户端使用
+                 with
+                 [
+                     _Tp=double
+                 ]
+     1>..\..\src\extract-lbp.cpp(24): warning C4244: “初始化”: 从“double”转换到“const int”，可能丢失数据
+     1>..\..\src\extract-lbp.cpp(72): warning C4018: “<”: 有符号/无符号不匹配
+     1>..\..\src\extract-lbp.cpp(121): warning C4018: “<”: 有符号/无符号不匹配
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../app\Face-HD-LBP.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:../../lib IntraFaceDLL.lib opencv_world300.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Face-HD-LBP.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\face\算法\face-HDlbp\High-Dimensional-LBP\build\app\Face-HD-LBP.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"../app\Face-HD-LBP.lib" /MACHINE:X86 Release\ArgumentParser.obj
+         "Release\extract-lbp.obj"
+         "Release\face-detection.obj"
+         Release\FaceDetector.obj
+         Release\FaceNormalizer.obj
+         Release\LBPFeatureExtractor.obj
+         Release\sirius_util.obj
+         Release\stdafx.obj
+         正在生成代码
+     1>c:\face\算法\face-hdlbp\high-dimensional-lbp\src\lbpfeatureextractor.cpp(81): warning C4715: “LBPFeatureExtractor::extractAt”: 不是所有的控件路径都返回值
+         已完成代码的生成
+         Face-HD-LBP.vcxproj -> C:\face\算法\face-HDlbp\High-Dimensional-LBP\build\Face-HD-LBP\../app\Face-HD-LBP.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"../app\Face-HD-LBP.exe;#1" /manifest "Release\Face-HD-LBP.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Release\Face-HD-LBP.unsuccessfulbuild”。
+         正在对“Release\Face-HD-LBP.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“C:\face\算法\face-HDlbp\High-Dimensional-LBP\build\Face-HD-LBP\Face-HD-LBP.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.74

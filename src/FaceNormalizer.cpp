@@ -3,7 +3,6 @@
 #include <vector>
 #include <utility>
 
-#include <cv.h>
 #include "FaceNormalizer.h"
 using namespace std;
 using namespace cv;

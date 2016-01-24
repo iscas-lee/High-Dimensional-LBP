@@ -4,7 +4,7 @@
 #include <utility>
 #include <cv.h>
 #include <highgui.h>
-
+#include <time.h>
 #include "ArgumentParser.h"
 #include "FaceDetector.h"
 #include "sirius_util.h"
@@ -12,10 +12,16 @@ using namespace std;
 using namespace cv;
 
 const int DEBUG = 0;
-const map<string, string> defaultArguments = {{"-m", "../data/fdetector_model.dat"}, {"-s", "250"}, {"-o", "./"}, {"-l", "100"}};
 
-int main(int argc, const char **argv)
+int main2(int argc, const char **argv)
 {
+	map<string, string> defaultArguments ;//= {{"-m", "../data/fdetector_model.dat"}, {"-s", "250"}, {"-o", "./"}, {"-l", "100"}};
+
+   defaultArguments.insert(pair<string, string>("-m", "models/haarcascade_frontalface_alt2.xml")); 
+   defaultArguments.insert(pair<string, string>("-s", "250"));
+   defaultArguments.insert(pair<string, string>("-o", "./"));
+   defaultArguments.insert(pair<string, string>("-l", "100"));
+
    const string usage = "Usage: face-detection [-m model_file -o output_dir -s output_scale -l min_size] input_images\n";
    ArgumentParser argParser(argc, argv, usage, defaultArguments);
    const int scale = stoi(argParser.getArgument("-s"));

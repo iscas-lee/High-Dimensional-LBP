@@ -1,9 +1,6 @@
 #include <string>
 #include <vector>
 
-#include <cv.h>
-#include <highgui.h>
-
 #include "FaceDetector.h"
 
 using namespace std;

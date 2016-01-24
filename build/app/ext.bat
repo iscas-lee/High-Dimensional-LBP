@@ -1,0 +1,1 @@
+ Face-HD-LBP -d 1  -o output/ output/4.jpg output/2.jpg output/3.jpg output/5.jpg output/1.jpg
